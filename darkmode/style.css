@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background-color: #111111;
+    margin: 0px;
+	height: 100%;
+	transition: height 250ms ease;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#left, #right {
+	width: 45vw;
+	height: 100vh;
+}
+
+#left {
+	margin: 0 0 0 2.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#right {
+	float: right;
+	margin: 0 2.5vw 0 0;
+	overflow: hidden; /* For hiding scrollbar */
+}
+
+#clock, #date, .bookmark-title, a {
+	text-align: center;
+	font-family: sans-serif;
+    font-family: "Roboto";
+	font-weight: 500;
+}
+
+#clock {
+	font-size: 4rem;
+	color: #FFF;
+}
+
+#date {
+    font-size: 2rem;
+	margin: 0.5rem;
+	color: #FFF;
+}
+
+#bookmark-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-right: 0px; /* Exact value is given in JavaScript code */
+	transition: height 250ms ease;
+	overflow: hidden;
+}
+
+.bookmark-set {
+	max-height: 25%;	
+	width: 100%;
+	background-color: #1B1B1B;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transition: height 250ms ease;
+}
+
+.bookmark-inner-container {
+	min-width: 60%;
+	max-height: 70%;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	transition: height 250ms ease;
+}
+
+.bookmark-title {
+	font-size: 2rem;
+	margin: 1vh 20%;
+	align-self: start;
+}
+
+#title1 {
+  background: linear-gradient(to right, #311B92, #00B0FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#line1 {
+	background: linear-gradient(to right, #311B92, #00B0FF, transparent);
+}
+
+#title2 {
+	background: linear-gradient(to right, #D50000, #F4511E);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#line2 {
+	background: linear-gradient(to right, #D50000, #F4511E, transparent);
+}
+
+#title3 {
+  background: linear-gradient(to right, #FF6D00, #FBC02D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#line3 {
+	background: linear-gradient(to right, #FF6D00, #FBC02D, transparent);
+}
+
+#title4 {
+  background: linear-gradient(to right, #00C853, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#line4 {
+	background: linear-gradient(to right, #00C853, #8BC34A, transparent);
+}
+
+#c-d-sep {
+	background: linear-gradient(to right, transparent, #FFFFFF, transparent);
+}
+
+.separator-line {
+	width: 60%;
+	min-height: 2px;
+	background-color: #FFF;
+}
+
+.bookmark {
+	font-size: 1.2rem;
+	margin: 0.3rem 1rem;
+	padding: 3px;
+}
+
+██████████████  ████            ██  ██████████████
+██          ██                  ██  ██          ██
+██  ██████  ██  ██    ██████  ██    ██  ██████  ██
+██  ██████  ██  ████  ████  ██      ██  ██████  ██
+██  ██████  ██  ████████      ██    ██  ██████  ██
+██          ██    ██    ████        ██          ██
+██████████████  ██  ██  ██  ██  ██  ██████████████
+                  ██  ██        ██                
+████████    ██  ██      ██  ██  ████    ██████  ██
+        ██    ██  ██        ██  ██    ██      ██  
+  ████████  ████      ██████        ██████        
+  ████████    ██      ██  ████████████████████    
+    ██    ████    ██    ████  ██  ████████  ██████
+        ████    ██████  ██    ████  ██████      ██
+  ██  ██    ████          ████  ████    ██  ████  
+██  ██████      ████    ██      ██████████      ██
+      ████████    ██    ████  ████████████████████
+                ████    ██████  ██      ██  ██  ██
+██████████████            ████  ██  ██  ██  ██████
+██          ██      ██  ██      ██      ██    ██  
+██  ██████  ██    ████          ████████████  ████
+██  ██████  ██  ████  ██  ████    ████  ██████████
+██  ██████  ██  ██    ████  ████    ██  ██  ████  
+██          ██  ██    ██████████  ██    ██  ██    
+██████████████  ██████      ██      ██████████████
